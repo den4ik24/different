@@ -13,7 +13,7 @@ namespace разное
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Конец программы");
                 Console.ForegroundColor = ConsoleColor.White;
-                Console.ReadLine();
+                Console.ReadKey();
                 Console.WriteLine();
             
         }

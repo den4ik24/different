@@ -70,7 +70,7 @@ namespace разное
                             
                             break;
                     }
-
+                    Console.WriteLine();
                 }
 
                 catch (Exception ex)

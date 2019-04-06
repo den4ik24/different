@@ -29,12 +29,17 @@ namespace разное
                     Console.WriteLine();
                     int count = Convert.ToInt32(exit);
 
-                    for (int i = 0; i < count; i++)
+                    for (int i = count; i >= 0; i--)
                     {
                         Console.WriteLine(i);
                     }
-                        Console.WriteLine(count);
-                 }
+
+                    //for (int i = 0; i <= count; i++)
+                    //{
+                    //    Console.WriteLine(i);
+                    //}
+
+                }
                 catch (FormatException ex)
                  {
                     Console.ForegroundColor = ConsoleColor.Red;
