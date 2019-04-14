@@ -24,8 +24,9 @@ namespace разное
 
                 try
                 {
-               
                     int FirstNumber = Convert.ToInt32(s);
+
+
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("Введите второе число");
                     Console.ForegroundColor = ConsoleColor.White;
@@ -35,6 +36,7 @@ namespace разное
                         return;
                     }
                     int SecondNumber = Convert.ToInt32(s);
+
 
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("Введите действие (+|-|*|/|");
@@ -94,5 +96,6 @@ namespace разное
             }
             return false;
         }
+
     }
 }

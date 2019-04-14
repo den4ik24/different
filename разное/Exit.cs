@@ -8,14 +8,21 @@ namespace разное
 {
     class Exit
     {
-        public static void AllExit()
+        public static bool AllExit(ref string exit)
         {
+            string ex = Console.ReadLine();
+            if (ex == "exit")
+            {
+
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Конец программы");
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.ReadKey();
                 Console.WriteLine();
-            
+                return true;
+            }
+
+            return false;
         }
 
         public static void ExitEx()

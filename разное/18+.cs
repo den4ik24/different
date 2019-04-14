@@ -19,7 +19,7 @@ namespace разное
                 string exit = Console.ReadLine();
                 if (exit == "exit")
                 {
-                    Exit.AllExit();
+                    //Exit.AllExit();
                     return;
                 }
 
@@ -33,7 +33,7 @@ namespace разное
                     }
                     else
                     {
-                        Console.WriteLine("ga away");
+                        Console.WriteLine("go away");
                     }
                 }
                 catch (FormatException ex)

@@ -18,7 +18,7 @@ namespace разное
                 string exit = Console.ReadLine();
                 if (exit == "exit")
                 {
-                    Exit.AllExit();
+                    //Exit.AllExit();
                     return;
                 }
 
