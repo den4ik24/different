@@ -10,17 +10,17 @@ namespace разное
             {
                 Console.WriteLine();
                 Console.WriteLine("enter your name");
-                string exit;
 
+                string exit;
                 //string exit = Exit.AllExit(ref exit);
-                if (Exit.AllExit(exit: ref exit) == true)
+                if (Exit.AllExit(ref exit) == true)
                 {
                     return;
                 }
                 else
                 {
 
-                    if (exit == "Denis" || exit == "Yurchenko" | exit == "admin")
+                    if (exit == "Denis" || exit == "Yurchenko" || exit == "admin")
                     {
                         Console.ForegroundColor = ConsoleColor.DarkGreen;
                         Console.WriteLine($"Hello {exit} !");
