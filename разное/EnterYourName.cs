@@ -4,15 +4,17 @@ namespace разное
 {
     class EnterYourName
     {
+
         public static void EnterName()
         {
+            Console.Title = "Допуск по имени";
+
             while (true)
             {
                 Console.WriteLine();
                 Console.WriteLine("enter your name");
 
-                string exit;
-                //string exit = Exit.AllExit(ref exit);
+                string exit = Console.ReadLine();
                 if (Exit.AllExit(ref exit) == true)
                 {
                     return;

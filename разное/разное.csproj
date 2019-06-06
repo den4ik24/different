@@ -50,6 +50,7 @@
     <Compile Include="EnterYourName.cs" />
     <Compile Include="Exit.cs" />
     <Compile Include="Names.cs" />
+    <Compile Include="Password.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

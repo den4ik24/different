@@ -10,15 +10,15 @@ namespace разное
     {
         public static void Birth()
         {
+            Console.Title = "Поздравлялки с ДР";
             while (true)
             {
                 Console.WriteLine();
                 Console.WriteLine("enter your age");
 
                 string exit = Console.ReadLine();
-                if (exit == "exit")
+                if (Exit.AllExit(ref exit) == true)
                 {
-                    //Exit.AllExit();
                     return;
                 }
 
@@ -26,9 +26,15 @@ namespace разное
                 {
                     
                     int age = Convert.ToInt32(exit);
+                    string Birth = "Happy birthday ! ";
                     while (age > 0)
                     {
-                        Console.WriteLine("Happy birthday");
+                        foreach(var BirthInString in Birth)
+                        {
+                            Console.WriteLine(BirthInString);
+                        }
+
+                        //Console.WriteLine("Happy birthday");
                         age--;
                     }
 

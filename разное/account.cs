@@ -10,6 +10,7 @@ namespace разное
     {
         public static void Acc()
         {
+            Console.Title = "Обратный отсчет";
             while (true)
             {
                 Console.WriteLine();
@@ -17,15 +18,13 @@ namespace разное
                 Console.WriteLine();
 
                 string exit = Console.ReadLine();
-                 if (exit == "exit")
+                if (Exit.AllExit(ref exit) == true)
                 {
-                    //Exit.AllExit();
                     return;
                 }
 
                 try
                  {
-
                     Console.WriteLine();
                     int count = Convert.ToInt32(exit);
 
@@ -46,6 +45,8 @@ namespace разное
                     Console.WriteLine($"Вы ввели не число. {ex.Message}");
                     Console.ForegroundColor = ConsoleColor.White;
                  }
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                Console.WriteLine("ПУСК !!!!!");
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("конец программы");
                 Console.ForegroundColor = ConsoleColor.White;

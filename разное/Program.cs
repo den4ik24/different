@@ -10,8 +10,8 @@ namespace разное
     {
         static void Main(string[] args)
         {
-
-             string command = "";
+            Console.Title = "СБОРНИК";
+            string command = "";
             do
             {
                 Console.Clear();
@@ -23,7 +23,8 @@ namespace разное
                     "нажмите 3 - Обратный отсчет\n" +
                     "нажмите 4 - 18+\n" +
                     "нажмите 5 - Поздравления со всеми прошедшими Днями Рождения\n" +
-                    "нажмите 6 - Вопросы");
+                    "нажмите 6 - Вопросы\n" +
+                    "нажмите 7 - попытки ввода пароля");
                 command = Console.ReadLine();
                 Console.Clear();
                 switch (command)
@@ -63,6 +64,12 @@ namespace разное
                         Console.WriteLine("----Names----\n_____________\n");
                         Exit.ExitEx();
                         Names.Name();
+                        break;
+                    case "7":
+                        Console.ForegroundColor = ConsoleColor.DarkBlue;
+                        Console.WriteLine("----Password----\n_____________\n");
+                        Exit.ExitEx();
+                        Password.Pass();
                         break;
                     case "Help":
                         Console.ForegroundColor = ConsoleColor.DarkBlue;

@@ -12,14 +12,15 @@ namespace разное
         {
             while (true)
             {
+                Console.Title = "Проверка по имени";
+
                 Console.WriteLine();
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("Hi \n enter your name");
                 Console.ForegroundColor = ConsoleColor.White;
                 string exit = Console.ReadLine();
-                if (exit == "exit")
+                if (Exit.AllExit(ref exit) == true)
                 {
-                    //Exit.AllExit();
                     return;
                 }
 

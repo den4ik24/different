@@ -10,8 +10,7 @@ namespace разное
     {
         public static bool AllExit(ref string exit)
         {
-            string ex = Console.ReadLine();
-            if (ex == "exit")
+            if (exit == "exit")
             {
 
                 Console.ForegroundColor = ConsoleColor.Red;
@@ -31,5 +30,6 @@ namespace разное
             Console.WriteLine("Для выхода введите exit\n");
             Console.ForegroundColor = ConsoleColor.White;
         }
+      
     }
 }

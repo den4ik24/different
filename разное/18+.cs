@@ -10,6 +10,8 @@ namespace разное
     {
         public static void Eighteen()
         {
+            Console.Title = "Детям до 18...";
+
             Console.ForegroundColor = ConsoleColor.White;
             while (true)
             {
@@ -17,9 +19,8 @@ namespace разное
                 Console.WriteLine("enter your age");
 
                 string exit = Console.ReadLine();
-                if (exit == "exit")
+                if (Exit.AllExit(ref exit) == true)
                 {
-                    //Exit.AllExit();
                     return;
                 }
 
